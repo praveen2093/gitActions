@@ -5,3 +5,5 @@ def greet(name):
     print("Feel free to modify it as needed.")
     print(23+34)
     print("Thank you for using the demo action.")
+
+greet("Alice")   
