@@ -6,4 +6,8 @@ def greet(name):
     print(23+34)
     print("Thank you for using the demo action.")
 
+
 greet("Alice")   
+greet("Bob")
+greet("Charlie")
+greet("David")
