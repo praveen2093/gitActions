@@ -1,0 +1,18 @@
+name: Hello World Workflow
+on:
+  push: branches:[main]
+  workflow_dispatch:
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Hello World Step
+        run: echo "Hello, World!"
+      - name: print current date
+        run: date
+      - name: print current directory
+        run: pwd
+      - name: show who is runner
+        run: echo "Runner is $RUNNER_NAME"
